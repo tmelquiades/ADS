@@ -1,0 +1,286 @@
+<!-- UNIPÊ
+Análise e Desenvolvimento de Sistemas
+Aplicações para Internet
+Aluna: Thaís Melquíades Macêdo-->
+
+<html>
+<!-- cabeça do documento -->
+    <head>
+        <title>HTML, CSS, JS: Tutoriais</title>
+        <style>
+            body{
+                margin: 25;
+            }
+            header{
+                background-color: coral; 
+                text-align: center;
+                padding: 10px 0; 
+                font-size: 30px;
+            }
+            ul {
+                list-style: none; 
+                display:flex; 
+                justify-content: space-between; 
+                background-color: coral; 
+                padding: 10px;
+            }
+            li{
+                flex-grow: 1;
+            }
+            .ahref{
+                color:aliceblue; 
+                text-decoration: none;
+            }
+            .section1{
+                margin-bottom: 30px;
+                font-size: 18px;
+            }
+            .section2{
+                display: flex; 
+                margin-bottom: 30px; 
+                column-gap: 5px;
+            }
+            .section2a{
+                color:white; 
+                width: 50%; 
+                background-color:#E8833C; 
+                padding: 10px
+            }
+            table{
+                color: white; 
+                border: 2px solid #FFAC42; 
+                background-color: #E8833C;
+            }
+            .section3{
+                width: 50%; 
+                color: white; 
+                background-color: #E8513C; 
+                padding: 10px
+            }
+            .section4{
+                display: flex; 
+                column-gap: 5px; 
+                margin-bottom: 30px;
+            }
+            .section4a{
+                width: 33.33%; 
+                height: 300px; 
+                background-color: #FFAC42; 
+                padding: 10px
+            }
+            .section4b{
+                width: 33.33%; 
+                height: 300px; 
+                background-color: #FF7F50; 
+                padding: 10px
+            }
+            .section4c{
+                width: 33.33%; 
+                height: 300px; 
+                background-color: #FF4252; 
+                padding: 10px
+            }
+            footer{
+                padding: auto;
+            }
+            .footerdiv{
+                display: grid; 
+                grid-template-columns: auto auto auto; 
+                align-items: flex-start; 
+                padding: auto; 
+                background-color: coral;
+            }
+            .footerdivdiv{
+                padding: 10px;
+            }
+        </style>
+    </head>
+<!-- corpo do documento-->
+    <body>
+        <div>
+            <header id="topo">
+                <h1>HTML <sup>Linguagem de Marcação de Hipertexto</sup></h1>
+                <h3>Tutoriais para iniciantes</h3>
+            </header>
+            <nav>
+                <ul>  <!--EDITAR os a href-->
+                    <li><a href="paginahtml.html#topo" style="color:aliceblue; text-decoration: none;">Início</a></li>
+                    <li><a href="paginahtml.html#html" style="color:aliceblue; text-decoration: none;">HTML</a></li>
+                    <li><a href="paginahtml.html#tabela" style="color:aliceblue; text-decoration: none;">Tabela e Listas</a></li>
+                    <li><a href="paginahtml.html#sobre" style="color:aliceblue; text-decoration: none;">Sobre CSS, HTML e JS</a></li>
+                    <li><a href="paginahtml.html#rodape" style="color:aliceblue; text-decoration: none;">Links</a></li>
+                    <li><a href="contato.html" style="color:aliceblue; text-decoration: none;">Contato</a></li>
+                </ul>
+            </nav>
+            <section style="margin-bottom: 30px; font-size: 18px;"> <!--EDITAR section1-->
+                <p id="html">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpngGRjYX1ca7qAADU3K6eGLj7ShQE3L2otdzfryl_Y9Ht2QRoQKYQbsXd36XIxMbYOw0&usqp=CAU" width="100" align="left" border="0" title="Logo HTML"/>
+                    <b><ins>HTML</ins></b> <i>(Linguagem de Marcação de Hipertexto)</i> é o bloco de construção mais básico
+                    da web. <mark>Define o significado e a estrutura do conteúdo da web.</mark> Outras tecnologias
+                    além do HTML geralmente são usadas para descrever a aparência/apresentação (CSS)
+                    ou a funcionalidade/comportamento <i>(JavaScript)</i> de uma página da web. Elementos do HTML são a base  
+                    de uma página HTML e são representados por tags. Esses elementos podem ter atributos, que proporcionam informações
+                    adicionais sobre o elemento. Alguns elementos não têm conteúdo, são os chamados elementos vazios, que não têm uma <i>end tag</i> 
+                    (etiqueta final). Em resumo, HTML é um sistema padronizado para marcar arquivos de textos para obter efeitos de fonte, cor, gráfico 
+                    e <i>hyperlink</i> em páginas <i>WWW (World Wide Web)</i>.
+                </p>
+            </section>
+            <hr>
+            <section style="display: flex; margin-bottom: 30px; column-gap: 5px;"> <!--EDITAR section2-->
+                <section style="color:white; width: 50%; background-color:#E8833C; padding: 10px"> <!--EDITAR section2a-->
+                    <p id="tabela">
+                        <!-- definição da tabela -->
+                        <table style="color: white; border: 2px solid #FFAC42; background-color: #E8833C;" border="1"> <!--EDITAR table-->
+                            <!-- cabeçalho da tabela -->
+                            <thead bgcolor="#F2E2C4">
+                                <caption>TABELA DE TAGS</caption>
+                                <tr>
+                                    <th colspan=2>TABELA DE TAGS</th>
+                                </tr>
+                                <tr>
+                                    <th>Tag HTML</th>
+                                    <th>Utilidade</th>
+                                </tr>
+                            </thead>
+                            <!-- corpo da tabela -->
+                            <tbody>
+                                <!-- linha -->
+                                <tr>
+                                    <!-- células -->
+                                    <td><b>HTML</b></td>
+                                    <td>Define o escopo de um documento HTML</td>
+                                </tr>
+                                <tr>
+                                    <td><b>BODY</b></td>
+                                    <td>É onde fica todo o conteúdo de texto, imagem e vídeo que<br>
+                                        o usuário vê e interage</td>
+                                </tr>
+                                <tr>
+                                    <td><b>P</b></td>
+                                    <td>Define um parágrafo no documento</td>
+                                </tr>
+                                <tr>
+                                    <td><b>IMG</b></td>
+                                    <td>Para incluir imagens</td>
+                                </tr>
+                                <tr>
+                                    <td><b>A</b></td>
+                                    <td>Para inserir links</td>
+                                </tr>
+                                <tr>
+                                    <td><b>B</b></td>
+                                    <td>Para deixar um texto em negrito</td>
+                                </tr>
+                                <tr>
+                                    <td><b>I</b></td>
+                                    <td>Para deixar um texto em itálico</td>
+                                </tr>
+                                <tr>
+                                    <td><b>TABLE</b></td>
+                                    <td>Define uma tabela</td>
+                                </tr>
+                                <tr>
+                                    <td><b>TH</b></td>
+                                    <td>Define o cabeçalho de uma tabela</td>
+                                </tr>
+                                <tr>
+                                    <td><b>TD</b></td>
+                                    <td>Define uma célula na tabela</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </p>
+                </section>
+                <section  style="width: 50%; color: white; background-color: #E8513C; padding: 10px"> <!--EDITAR section3-->
+                    <h3>Protocolos WEB</h3>
+                    <p>
+                        <!-- lista ordenada -->
+                        <ol>
+                            <li>ICMP: Internet Control Message Protocol</li>
+                            <br>
+                            <li>HTTP: Hypertext Transfer Protocol</li>
+                            <br>
+                            <li>IMAP: Internet Message Access Protocol</li>
+                            <br>
+                            <li>DHCP: Dynamic Host Configuration Protocol</li>
+                            <br>
+                            <li>FTP: File Transfer Protocol</li>
+                            <br>
+                            <li>TCP/IP: Transmission Control Protocol/Internet Protocol</li>
+                            <br>
+                            <li>XMPP: Extensible Messaging and Presence Protocol</li>
+                            <br>
+                            <li>POP: Post Office Protocol</li>
+                        </ol>
+                    </p>
+                </section>
+            </section>
+            <section style="display: flex; column-gap: 5px; margin-bottom: 30px;"> <!--EDITAR section4-->
+                <section style="width: 33.33%; height: 300px; background-color: #FFAC42; padding: 10px"> <!--EDITAR section4a-->
+                    <h3 id="sobre">O que é CSS?</h3>
+                    <p>
+                        CSS é a sigla para Cascading Style Sheets (Folhas de Estilo em Cascatas). 
+                        É uma maneira de dar estilo ao código criado por linguagens de marcação. 
+                        De forma prática, ele funciona como uma camada de personalização ao conteúdo visível. Estes tipos de 
+                        linguagem citados foram idealizados para serem funcionais e, por serem de marcação, precisaram ser 
+                        aperfeiçoados. Então, o CSS foi criado porque o HTML não era capaz de compreender todas as necessidades que 
+                        um programador tinha para criar padrões de formatação nas páginas. O CSS veio como uma boa 
+                        solução para aprimorar a estética dos sites. 
+                        Por meio dele, é possível separar formatos de conteúdos, bem como definir como serão exibidos em cada página.
+                    </p>
+                </section>
+                <section style="width: 33.33%; height: 300px; background-color: #FF7F50; padding: 10px"> <!--EDITAR section4b-->
+                    <h3>O que é HTML?</h3>
+                    <p>
+                        HTML é o bloco de construção mais básico
+                        da web. Define o significado e a estrutura do conteúdo da web. Elementos do HTML são a base  
+                        de uma página HTML e são representados por tags. Esses elementos podem ter atributos, que proporcionam informações
+                        adicionais sobre o elemento. Alguns elementos não têm conteúdo, são os chamados elementos vazios, que não têm uma <i>end tag</i> 
+                        (etiqueta final). Em resumo, HTML é um sistema padronizado para marcar arquivos de textos para obter efeitos de fonte, cor, gráfico 
+                        e <i>hyperlink</i> em páginas <i>WWW (World Wide Web)</i>.
+                    </p>
+                </section>
+                <section style="width: 33.33%; height: 300px; background-color: #FF4252; padding: 10px"> <!--EDITAR section4c-->
+                    <h3>O que é JavaScript?</h3>
+                    <p>
+                        O JavaScript (JS) é uma linguagem de programação interpretada de alto nível muito popular no mundo. Isso se deve 
+                        principalmente ao fato de que o JS é a linguagem padrão que os navegadores interpretam e que com HTML 
+                        e CSS formam a base de toda a Web. O JS se destaca por deixar as páginas Web dinâmicas, que é sua principal função. 
+                        A linguagem permite implementar itens complexos em páginas web, mostrando conteúdo que se atualiza em um intervalo 
+                        de tempo, mapas interativos ou gráficos 2D/3D animados, entre outros.
+                    </p>
+                </section>
+            </section>
+            <footer id="rodape" style="padding: auto;"> <!--EDITAR-->
+                <div style="display: grid; grid-template-columns: auto auto auto; align-items: flex-start; padding: auto; background-color: coral;">
+                    <div style="padding: 10px;"> <!--EDITAR footerdivdiv-->
+                        <h4>Sobre</h4>
+                        <p>
+                            <ul>
+                                <li><a href= "paginahtml.html#topo" style="text-decoration: none;">Voltar ao topo</a></li>
+                                <li>Política de privacidade</li>
+                                <li><a href= "contato.html" style="text-decoration: none;">Fale conosco</a></li>
+                            </ul>
+                        </p>
+                    </div>
+                    <div style="padding: 10px;"> <!--EDITAR footerdivdiv-->
+                        <h4>Referências</h4>
+                        <p>
+                            <ul>
+                                <li><a href= "https://www.w3schools.com/html/default.asp" style="text-decoration: none;">W3Schools</a></li>
+                                <li><a href= "https://www.hostmidia.com.br/blog/protocolos-de-internet/" style="text-decoration: none;">HostMídia</a></li>
+                                <li><a href= "https://html.spec.whatwg.org/multipage/" style="text-decoration: none;">HTML Living Standard WhatWG</a></li>
+                                <li><a href= "https://br.godaddy.com/blog/voce-sabe-o-que-e-css-entenda-como-funciona-e-para-que-serve/#:~:text=CSS%20%C3%A9%20a%20sigla%20para,de%20personaliza%C3%A7%C3%A3o%20ao%20conte%C3%BAdo%20vis%C3%ADvel." style="text-decoration: none;">GoDaddy</a></li>
+                                <li><a href= "https://www.alura.com.br/artigos/javascript?gclid=EAIaIQobChMIjOHh4ZW3_gIVAdiRCh1CVgj4EAAYASAAEgIBDvD_BwE" style="text-decoration: none;">Alura</a></li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+                <div style="width: 100%; text-align: center;">
+                    <p>Thaís Melquíades &copy; Direitos reservados.</p>
+                </div>
+            </footer>
+        </div>
+    </body>
+
+</html>
