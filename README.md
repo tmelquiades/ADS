@@ -1,3 +1,3 @@
-# ADS-P1
+# ADS - Análise e Desenvolvimento de Sistemas
 
-Exercícios resolvidos das disciplinas Aplicações para Internet e Programação de Computadores
+Códigos, exercícios e projetos das disciplinas cursadas em Análise e Desenvolvimento de Sistemas
