@@ -1,0 +1,45 @@
+/*
+**	Função: Indicar a ordem e o resultado das expressões
+**	Autor: Thaís Melquíades Macêdo - ADS P2 - TDA - TURMA B
+**	Data: 19/09/2023
+**	Observações:
+*/
+a. 2 + 3 - 5 * 8 / 4
+   Ordem: Multiplicação e Divisão (da esquerda para a direita), Adição e Subtração (da esquerda para a direita)
+   Resultado: 2 + 3 - 40 / 4 = 2 + 3 - 10 = -5
+
+b. 7 * 4 / 2 + 9 - 6
+   Ordem: Multiplicação e Divisão (da esquerda para a direita), Adição e Subtração (da esquerda para a direita)
+   Resultado: 28 / 2 + 9 - 6 = 14 + 9 - 6 = 17
+
+c. (4 / 2) / 0,5 * (4 % 2) ^ 0,5
+   Ordem: Parênteses, Divisão, Módulo, Multiplicação
+   Resultado: (2 / 0,5) * (0) * 0,5 = 4 * 0 * 0,5 = 0
+
+d. 7 > 2 && 3 - 5 < 8
+   Ordem: Operações lógicas (&&), Subtração, Comparação (>)
+   Resultado: Verdadeiro (1) && Verdadeiro (1) = Verdadeiro (1)
+
+e. !(3 + 5 != 5 / 2 - 1)
+   Ordem: Parênteses, Adição, Subtração, Comparação (!=), Operação lógica (!)
+   Resultado: !(8 != 2 - 1) = !(8 != 1) = !(Verdadeiro) = Falso (0)
+
+f. 7 % 3 - 8 + 4 / 2
+   Ordem: Módulo (%), Divisão, Subtração, Adição (da esquerda para a direita)
+   Resultado: 1 - 8 + 2 = -5 + 2 = -3
+
+g. 6 / 3 - 3 * 4 % 2
+   Ordem: Divisão, Multiplicação, Módulo (da esquerda para a direita)
+   Resultado: 2 - 12 % 2 = 2 - 0 = 2
+
+h. 10 > 11 && 11 < 12
+   Ordem: Operações lógicas (&&), Comparação (>)
+   Resultado: Falso (0) && Verdadeiro (1) = Falso (0)
+
+i. 9 / 3 + 9 % 3 + 9 * 3
+   Ordem: Divisão, Módulo, Multiplicação, Adição (da esquerda para a direita)
+   Resultado: 3 + 0 + 27 = 30
+
+j. 1 + 2 + 3 / 2
+   Ordem: Divisão, Adição (da esquerda para a direita)
+   Resultado: 1 + 2 + 1,5 = 4,5
